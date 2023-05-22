@@ -1,9 +1,6 @@
-const db = require('../database/connection')
+const db = require('../database/db')
 
 module.exports.ping = (req, res) => {
-    const {name, nick} = req.body
-    console.log(`name: ${name}`)
-    console.log(`password: ${nick}`)
     try {
         res.send("Pong")
     } catch(err) {
